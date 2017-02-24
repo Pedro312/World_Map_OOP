@@ -24,6 +24,12 @@ hw = Room('Hallway', 'ftl', 'jai;', 'hw2', 'mentr', None, None, ' It\'s a long h
 food = Room('Foodcourt', None, 'wfr', 'mentr', 'bath', None, None, ' There are\
 tons of empty tables. The light is flickering.')
 
+elev = Room('Elevator', None, 'mentr', None, None, ' It\'s an elevator. The\
+power is down.')
+
+wfr = Room('Wet Floor', None, None, 'food', None, ' The floor is significantly\
+moist.')
+
 node = mentr
 
 #try:
