@@ -29,7 +29,7 @@ elev = Room('Elevator', None, 'mentr', None, None, None, None, ' It\'s an elevat
 power is down.')
 
 wfr = Room('Wet Floor', None, None, 'food', None, None, None, ' The floor is significantly\
-moist.')
+ moist.')
 
 bath = Room('Bathroom', 'food', None, None, None, None, None, ' It\'s a bathroom. The stalls\
 are locked and the mirrors are shattered.')
