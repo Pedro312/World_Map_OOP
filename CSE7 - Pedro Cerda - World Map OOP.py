@@ -1,3 +1,5 @@
+import sys
+
 class Room():
     def __init__(self, the_name, N, W, E, S, U, D, the_description):
         self.name = the_name
@@ -12,8 +14,7 @@ class Room():
             '''This function allows movement to a different node.
             '''                                        
             global node
-            node = globals()[getattr(self.direction)]
-            
+            node = globals()[getattr(self,direction)]         
                     
 mentr = Room('Mall Entrance', 'hw','food', 'elev', None, None, None, ' You are in\
  the front mall entrance. Behind you are the\
@@ -43,7 +44,26 @@ hw2 = Room('Hallway', None, 'hw', None, None, None, None, ' It\'s a long hallway
 
 node = mentr
 
-#try:
-     #   node = world_map[node['PATHS'][command]]
- #   except:
-  #      print 'You can\'t'
+#static variables
+is_alive = True
+directions = ['north','south','east','west','up','down']
+short_directions = ['n','s','e','w','u','d']
+
+while is_alive:
+    #Print room name and description
+    print node.name
+    print node.description
+
+   #Ask for input
+    command = raw_input('> ')
+    if command in ['quit','exit']:
+        sys.exit(0)
+
+   #Allows us to change nodes
+    if command in short_directions:
+        index = short_directions.index(command)
+        command = directions[index]
+    try:
+        node.move(command)
+    except:
+        print 'You can\'t'
