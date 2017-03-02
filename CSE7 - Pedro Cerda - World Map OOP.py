@@ -42,6 +42,11 @@ shoes thrown all over the ground and fairly large footprints,')
 
 hw2 = Room('Hallway', None, 'hw', None, None, None, None, ' It\'s a long hallway.')
 
+pp = Room('Pretzel Palace', None, None, None, 'hw2', None, None,'There is a cold\
+ pretzel on the counter, and the cash register is empty.')
+ 
+
+
 node = mentr
 
 #static variables
