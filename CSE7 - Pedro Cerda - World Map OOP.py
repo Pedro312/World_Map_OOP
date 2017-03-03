@@ -1,3 +1,4 @@
+
 import sys
 
 class Room():
@@ -40,12 +41,13 @@ extremely cold, and a badge is gleaming on the desk.')
 ftl = Room('Footlocker', None, None, None, 'hw', None, None, ' It\'s a store. There are\
 shoes thrown all over the ground and fairly large footprints,')
 
-hw2 = Room('Hallway', None, 'hw', None, None, None, None, ' It\'s a long hallway.')
+hw2 = Room('Hallway', 'pp', 'hw', None, None, None, None, ' It\'s a long hallway.')
 
-pp = Room('Pretzel Palace', None, None, None, 'hw2', None, None,'There is a cold\
+pp = Room('Pretzel Palace', 'kc', None, None, 'hw2', None, None,'There is a cold\
  pretzel on the counter, and the cash register is empty.')
  
-
+kc = Room('Kitchen', 'frz', None, None, 'pp', None, None, "It's a kitchen. There\
+ is a freezer towards the back and pans on the ground.")
 
 node = mentr
 
